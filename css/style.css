@@ -1,0 +1,255 @@
+/* 
+   Styles CSS pour le site web de .....
+*/
+
+* {
+	margin: 0;
+	padding:0;
+}
+
+/* === Styles globaux ===*/
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    color: #6D6E71;
+}
+.container { 
+	width: 1140px; 
+	margin: auto;
+}
+
+
+.row { 
+	display: flex; 
+	gap: 16px;
+}
+
+
+.navbar-brand {
+    display: inline-block;       /* Affiche l'élément comme un bloc en ligne, ce qui permet de le dimensionner tout en restant dans le flux en ligne */
+    padding-top: 5px;      /* Ajoute un espace (padding) au-dessus de l'élément, ici 0.3125 rem */
+    padding-bottom: 5px;   /* Ajoute un espace (padding) en dessous de l'élément, ici 0.3125 rem */
+    margin-right: 16px;         /* Ajoute une marge de 1 rem à droite de l'élément */
+    font-size: 20px;         /* Définit la taille de la police à 1.25 rem */
+}
+
+.navbar-brand img {
+    width: 300px;               /* Définit la largeur de l'image à 300 pixels */
+    margin-bottom: -70px;       /* Ajoute une marge négative en dessous de l'image, ce qui la déplace vers le haut de 70 pixels */
+    position: relative;         /* Définit la position de l'image comme relative par rapport à son emplacement normal */
+    z-index: 100;               /* Définit l'ordre d'empilement de l'image, ici 100, pour qu'elle soit au-dessus des autres éléments */
+    padding: 10px;              /* Ajoute un espace (padding) de 10 pixels autour de l'image */
+    margin-top: -16px;          /* Ajoute une marge négative en haut de l'image, ce qui la déplace vers le haut de 16 pixels */
+    background: #FFF;           /* Définit l'arrière-plan de l'image en blanc */
+}
+
+/* === Listes ===*/
+
+li {
+	list-style: none;
+}
+
+ul {
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.nav-link {
+    text-decoration: none; /* Supprime la ligne de soulignement */
+	text-transform: uppercase;
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Ajoute une ligne de soulignement au survol */
+    color: #b7965e; /* Change la couleur du texte au survol */
+}
+
+/* == Police == */
+
+h2 {
+    font-size: 24px; /* Définit la taille de police du titre h2 à 24 pixels */
+    padding-bottom: 0.3em; /* Ajoute un espace de 0.3 em en bas du titre h2 */
+    line-height: 1.25; /* Définit la hauteur de ligne à 1.25 fois la taille de la police */
+}
+
+h2, 
+h3 {
+    clear: both; /* Supprime les flottants à gauche et à droite du titre h2 */
+    color: #24292e; /* Définit la couleur du texte du titre h2 */
+    font-weight: 600; /* Définit l'épaisseur de la police du titre h2 à 600 (gras) */
+    margin-top: 24px; /* Ajoute une marge en haut du titre h2 de 24 pixels */
+    margin-bottom: 15px; /* Ajoute une marge en bas du titre h2 de 15 pixels */
+}
+
+p {
+    display: block; /* Définit le paragraphe comme un élément de bloc, le faisant occuper toute la largeur disponible */
+    margin-block-start: 16px; /* Ajoute une marge en haut du paragraphe de 16 pixels */
+    margin-block-end: 16px; /* Ajoute une marge en bas du paragraphe de 16 pixels */
+    margin-inline-start: 0px; /* Réinitialise la marge à gauche du paragraphe à 0 */
+    margin-inline-end: 0px; /* Réinitialise la marge à droite du paragraphe à 0 */
+    unicode-bidi: isolate; /* Isole le texte bidirectionnellement */
+    margin-bottom: 24px; /* Ajoute une marge en bas du paragraphe de 24 pixels */
+}
+
+figcaption {
+    font-family: 'Votre Police', sans-serif; /* Remplacez 'Votre Police' par le nom de la police que vous souhaitez utiliser */
+    font-size: 16px; /* Définissez la taille de la police selon vos préférences */
+    font-weight: bold; /* Définissez le poids de la police */
+    color: #ff0000; /* Définissez la couleur du texte (par exemple, rouge ici) */
+    text-align: right; /* Aligner le texte à droite */
+    display: block; /* Assurer que la légende est affichée sur une ligne séparée */
+    width: 100%; /* La légende aura la même largeur que son conteneur parent (ici l'image) */
+}
+
+/* == Couleurs == */
+
+.default-color {
+    color: #6c6d70;
+}
+
+.fromtitle {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.special-color {
+    color: #b7965e;
+}
+
+.fromstyle input[type="text"],
+.fromstyle textarea {
+    background-color: #6c6d70; /* Couleur arrière plan */
+    border: none; /* Suppression de toutes les bordures */
+    border-bottom: 1px solid #ccc; /* Bordure uniquement en bas */
+    color: white; /* Optionnel : pour ajuster la couleur du texte */
+}
+
+.fromstyle input[type="text"]::placeholder,
+.fromstyle textarea::placeholder {
+    color: white; /* Couleur du texte du placeholder */
+}
+
+/* === Classes d'utilité === */
+
+.d-none	{ 
+	display: none;
+}
+.position-relative {
+	position:relative;
+}
+.position-absolute {
+	position:absolute;
+}
+.position-fixed {
+	position:fixed;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+.mt-5 { 
+	margin-top: 20px;
+}
+.mb-5 { 
+	margin-bottom: 20px;
+}
+.mb-special	{
+	margin-bottom: 200px;
+}
+.flex-between { 
+	justify-content: space-between;
+}
+.flex-end		{ 
+	justify-content: flex-end;
+}
+.flex-center		{ 
+	justify-content: center;
+}
+.border		{
+	border: 1px solid grey; 
+}
+.row > div {
+	flex : 2 1 auto;
+}
+
+
+/* === Slider === */
+
+#slider 	{
+	background-image: url('../images/header.webp'); 
+    background-size: cover;
+    background-position: center;
+	height: 500px; /*  hauteur de l'élément #slider à 500 pixels. */
+	display: flex; /* me permet de garder mon texte enfant sur l'image */
+}
+
+#slider .text-content h1 {
+    font-size: 90px;
+    color: white; /* Texte en blanc */
+}
+
+#slider .text-content p {
+    font-size: 20px; /* Taille de police du paragraphe */
+    color: white; /* Texte en blanc */
+    font-weight: normal; /* Texte du paragraphe en régulier */
+}
+/*-------- GRILLES---------------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height:500px;
+    margin: 2px;
+    }
+    .grid img { width: 100%; height: 100%;}
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 3 / 1 / 5 / 3; }
+    .div3 { grid-area: 1 / 3 / 5 / 4; }
+    .div4 { grid-area: 1 / 4 / 4 / 6; }
+    
+
+/* ====Footer =====*/
+
+footer {
+	background: #6c6d70;
+}
+.w-100 {
+	width: 100%;
+}
+.w-75 {
+	width: 75%;
+}
+.w-50 {
+	width: 50%;
+}
+.w-25 {
+	width: 25%;
+}
+.d-none{
+	display: none;	
+}
+
+
+footer {
+	padding-top: 50px; padding-bottom:50px;	
+}
+
+
+/* ====Média query pour les écrans de petite taille =========*/
+
+
+@media screen and (max-width:991px) {
+	.container{width:100%;}
+	.row { flex-direction: column;}
+	.w-25, .w-75, .w-50 { width: 100%; }
+}
+
+
+ul#menu-footer {
+    list-style: none;
+    padding: 0;
+}
